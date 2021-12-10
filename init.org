@@ -1071,6 +1071,18 @@ capabilities across a variety of editors. In Emacs, we can use the wonderful
     (editorconfig-mode 1))
 #+end_src
 
+*** direnv support
+[[https://direnv.net/][direnv]] lets us set per-directory environment variables, which meshes extremely
+well with Nix.
+
+#+begin_src emacs-lisp
+  (use-package direnv
+    :straight t
+    :demand t
+    :config
+    (direnv-mode 1))
+#+end_src
+
 *** Languages
 Most languages, where applicable, are configured to conform to Google's various
 coding style guides by default. Whenever Google does not define a style guide,
