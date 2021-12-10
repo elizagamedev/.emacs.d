@@ -1,0 +1,5 @@
+*
+!/.gitignore
+!/init.org
+!/tangle.sh
+!/custom.el
