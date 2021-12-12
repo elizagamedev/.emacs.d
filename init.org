@@ -1007,7 +1007,7 @@ This is flagged as TODO because the hard-coded path to ktfmt should be improved.
           '("clang-format" "--style=file" "--assume-filename" filepath))
     (setf (alist-get 'ktfmt apheleia-formatters)
           `("java" "-jar" ,(concat (file-name-as-directory (getenv "HOME"))
-                                   ".opt/ktfmt-0.29-jar-with-dependencies.jar")
+                                   ".opt/ktfmt-0.30-jar-with-dependencies.jar")
             "--google-style" "-"))
     (setf (alist-get 'nixpkgs-fmt apheleia-formatters)
           `("nixpkgs-fmt"))
@@ -1526,6 +1526,12 @@ Allow Org to make links to specific pages in PDF files.
 **** Common Lisp
 #+begin_src emacs-lisp
   (use-package slime
+    :straight t)
+#+end_src
+
+**** Groovy
+#+begin_src emacs-lisp
+  (use-package groovy-mode
     :straight t)
 #+end_src
 
